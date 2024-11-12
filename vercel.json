@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/api/(.*)", "destination": "/backend/$1" },
-      { "source": "/(.*)", "destination": "/frontend/$1" }
+      { "source": "/api/(.*)", "destination": "http://localhost:5000/api/$1" },
+      { "source": "/(.*)", "destination": "http://localhost:3000/$1" }
     ]
   }
