@@ -87,7 +87,6 @@ app.get('/api/auth/find/:otherAccount', async (req, res) => {
     } else {
       res.status(404).json({ message: 'Пользователь не найден' });
     } 
-    res.status(201).send({message: 'Пользователь найден', result})
   } catch (error) {
     res.status(500).json({ message: 'Ошибка сервера' });
   }
