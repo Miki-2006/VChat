@@ -26,6 +26,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Обработка preflight-запросов
@@ -96,7 +97,8 @@ app.get('/api/auth/find/:otherAccount', async (req, res) => {
 // Маршруты
 
 app.get('/', (req, res) => {
-  res.redirect('/api/register');
+  res.json("Hello!")
+  // res.redirect('/api/register');
 });
 
 app.listen(5000, () => {
